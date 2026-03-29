@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday My Love 💙</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Floating Background Hearts -->
+    <div class="floating-hearts"></div>
+
+    <!-- PAGE 1 -->
+    <section id="page1" class="page active">
+        <div class="card glass">
+            <h1 class="main-title">💙 Happy Birthday My Love 💙</h1>
+            <p class="subtitle">First... answer these cute questions 😚</p>
+
+            <div class="question-box">
+                <label>1. Unaku enna evlo pudikum nu theriyuma? 😍</label>
+                <input type="text" placeholder="Type your answer..." />
+            </div>
+
+            <div class="question-box">
+                <label>2. Namma epo marriage pandrathu? 💍</label>
+                <input type="text" placeholder="Type your answer..." />
+            </div>
+
+            <div class="question-box">
+                <label>3. Inniki un bday so unaku enna venum? 🎁</label>
+                <input type="text" placeholder="Type your answer..." />
+            </div>
+
+            <button class="next-btn" onclick="goToPage(2)">Continue 💫</button>
+        </div>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section id="page2" class="page">
+        <div class="card glass love-page">
+            <h2 class="main-title">💙 Type Love To Unite Hearts 🖤</h2>
+            <p class="subtitle">Type "loveeeeee..." continuously 💌</p>
+
+            <div class="love-stage" id="loveStage">
+                <!-- Background Name -->
+                <div class="bg-name" id="bgName">ARAN</div>
+
+                <!-- LEFT HEART -->
+                <div class="image-heart left-heart" id="leftHeart">
+                    <img src="heart2.png" alt="Left Heart" />
+                </div>
+
+                <!-- RIGHT HEART -->
+                <div class="image-heart right-heart" id="rightHeart">
+                    <img src="finalheart.png" alt="Right Heart" />
+                </div>
+
+                <!-- HEART TRAIL -->
+                <div class="trail" id="trail"></div>
+
+                <!-- CRASH EFFECT -->
+                <div class="crash-effect" id="crashEffect">💥</div>
+
+                <!-- MERGED HEART -->
+                <div class="merged-heart" id="mergedHeart">
+                    <img src="heart1.png" alt="Merged Heart" />
+                </div>
+            </div>
+
+            <div class="love-input-container">
+                <div class="love-box">
+                    <label for="loveInput">Type here 😚</label>
+                    <input type="text" id="loveInput" placeholder="Type: loveeeeeeeeeeeee..." autocomplete="off" />
+                    <p class="typing-status" id="typingStatus">
+                        Keep typing "loveeeee..." until both hearts crash 💙🖤
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section id="page3" class="page final-page">
+        <div class="balloons">
+            <span class="balloon b1"></span>
+            <span class="balloon b2"></span>
+            <span class="balloon b3"></span>
+            <span class="balloon b4"></span>
+            <span class="balloon b5"></span>
+            <span class="balloon b6"></span>
+            <span class="balloon b7"></span>
+            <span class="balloon b8"></span>
+        </div>
+
+        <div class="final-content glass">
+            <h1 class="final-title">🎉 Happy Birthday My Princess 🎉</h1>
+            <p class="final-text">
+                Nee en life la vandhadhum ellame colorful aaiduchu 💙<br /> Un smile, un voice, un love... ellame enaku romba special 🥹<br /><br /> Inniki un birthday... so unaku oru small surprise from my heart 💝<br /> I love you so much da chellam
+                💙🖤
+            </p>
+
+            <div class="gallery">
+                <div class="photo-card">
+                    <img src="pic1.jpg" alt="Memory 1" />
+                </div>
+                <div class="photo-card">
+                    <img src="pic2.jpg" alt="Memory 2" />
+                </div>
+                <div class="photo-card">
+                    <img src="pic3.jpg" alt="Memory 3" />
+                </div>
+            </div>
+
+            <button class="love-btn" onclick="showLovePopup()">Tap Here My Love 💖</button>
+        </div>
+    </section>
+
+    <!-- POPUP -->
+    <div id="lovePopup" class="popup">
+        <div class="popup-box">
+            <h2>💌 Special Note</h2>
+            <p>
+                Nee enaku gift illa... nee than en biggest blessing 💙<br /> Happy Birthday to the most beautiful girl in my world 🌍💖
+            </p>
+            <button onclick="closeLovePopup()">Close 💕</button>
+        </div>
+    </div>
+
+    <!-- AUDIO FILES -->
+    <audio id="bgMusic" loop>
+    <source src="bgm.mp3" type="audio/mpeg" />
+  </audio>
+
+    <audio id="crashSound">
+    <source src="crash.mp3" type="audio/mpeg" />
+  </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
