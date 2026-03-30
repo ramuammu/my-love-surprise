@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Approval 💙</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section class="page active">
+        <div class="card glass">
+            <h1 class="main-title">💙 Admin Approval Panel</h1>
+            <p class="subtitle">Only you should open this page 😎</p>
+
+            <div class="question-box">
+                <label>Question 1 Answer</label>
+                <div id="adminAns1" class="admin-answer">Waiting...</div>
+                <button class="next-btn" onclick="approveQuestion(1)">Approve Q1 ✅</button>
+            </div>
+
+            <div class="question-box">
+                <label>Question 2 Answer</label>
+                <div id="adminAns2" class="admin-answer">Waiting...</div>
+                <button class="next-btn" onclick="approveQuestion(2)">Approve Q2 ✅</button>
+            </div>
+
+            <div class="question-box">
+                <label>Question 3 Answer</label>
+                <div id="adminAns3" class="admin-answer">Waiting...</div>
+                <button class="next-btn" onclick="approveQuestion(3)">Approve Q3 ✅</button>
+            </div>
+
+            <p id="adminStatus" class="typing-status">Live answers will appear here 💙</p>
+        </div>
+    </section>
+
+    <script type="module" src="admin.js"></script>
+</body>
+
+</html>
